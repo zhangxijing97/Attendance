@@ -2,6 +2,13 @@
 
 Attendance is an iPadOS app designed for teaching assistants at ASU Digital Culture Summer Institute. The app allows teaching assistants to manage attendance for their classes, including taking attendance, adding and removing students, and generating reports.
 
+## Features
+
+- Add and remove students
+- Take attendance and track absences
+- Generate attendance reports
+- Customize attendance settings
+
 ## Screenshots
 
 <p float="left">
@@ -19,20 +26,13 @@ Attendance is an iPadOS app designed for teaching assistants at ASU Digital Cult
    <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0056.PNG" width=40% height=40%>
 </p>
 
-## Features
-
-- Add and remove students
-- Take attendance and track absences
-- Generate attendance reports
-- Customize attendance settings
-
 ## Usage
 
 To use the Attendance app, simply launch it and select the class you want to take attendance for. You can add and remove students as needed, and then take attendance by tapping on each student's name. You can also customize attendance settings to fit your needs.
 
 ## Frameworks
 
-Mars Mission was built using the following frameworks:
+Attendance was built using the following frameworks:
 
 - Swift
 - Xcode

@@ -2,16 +2,29 @@
 
 Attendance is an iPadOS app designed for teaching assistants at ASU Digital Culture Summer Institute. The app allows teaching assistants to manage attendance for their classes, including taking attendance, adding and removing students, and generating reports.
 
+## Screenshots
+
+<p float="left">
+   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0051.PNG" width=40% height=40%>  
+   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0052.PNG" width=40% height=40%>
+</p>
+
+<p float="left">
+   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0053.PNG" width=40% height=40%>
+   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0054.PNG" width=40% height=40%>
+</p>
+
+<p float="left">
+   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0055.PNG" width=40% height=40%>
+   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0056.PNG" width=40% height=40%>
+</p>
+
 ## Features
 
 - Add and remove students
 - Take attendance and track absences
 - Generate attendance reports
 - Customize attendance settings
-
-## Getting Started
-
-To get started with the Attendance app, simply download and install it on your iPad. The app is available on the App Store.
 
 ## Usage
 
@@ -33,18 +46,6 @@ git clone https://github.com/zhangxijing97/Attendance.git
 cd Attendance
 open Attendance1.3.xcodeproj
 ```
-
-## Screenshots
-
-<p float="left">
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0051.PNG" width=50% height=50%>  
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0052.PNG" width=50% height=50%>
-</p>
-
-<p float="left">
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0053.PNG" width=40% height=40%>
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0054.PNG" width=25% height=25%>
-</p>
 
 <p float="left">
    <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0055.PNG" width=25% height=25%>

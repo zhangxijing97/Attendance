@@ -65,4 +65,4 @@ The Attendance app is released under the MIT License. See LICENSE for details.
 
 ## Credits
 
-The Attendance app was created by [Xijing Zhang]. If you have any questions or feedback, please email us at [zhangxijing97@gmail.com].
+The Attendance app was created by Xijing Zhang. If you have any questions or feedback, please email us at zhangxijing97@gmail.com.

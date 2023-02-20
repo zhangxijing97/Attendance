@@ -28,7 +28,7 @@ Attendance is an iPadOS app designed for teaching assistants at ASU Digital Cult
 
 ## Usage
 
-To use the Attendance app, simply launch it and select the class you want to take attendance for. You can add and remove students as needed, and then take attendance by tapping on each student's name. You can also customize attendance settings to fit your needs.
+To use the Attendance app, simply launch it and select the track/day you want to take attendance for. You can add and remove students as needed, and then take attendance by tapping on each student's check-in and check-out buttons. You can also customize attendance settings to fit your needs.
 
 ## Frameworks
 
@@ -46,11 +46,6 @@ git clone https://github.com/zhangxijing97/Attendance.git
 cd Attendance
 open Attendance1.3.xcodeproj
 ```
-
-<p float="left">
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0055.PNG" width=25% height=25%>
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0056.PNG" width=25% height=25%>
-</p>
 
 ## Privacy Note
 
@@ -70,4 +65,4 @@ The Attendance app is released under the MIT License. See LICENSE for details.
 
 ## Credits
 
-The Attendance app was created by [Your Name]. If you have any questions or feedback, please email us at [Your Email].
+The Attendance app was created by [Xijing Zhang]. If you have any questions or feedback, please email us at [zhangxijing97@gmail.com].

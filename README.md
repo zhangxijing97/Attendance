@@ -37,12 +37,12 @@ open Attendance1.3.xcodeproj
 ## Screenshots
 
 <p float="left">
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0051.PNG" width=50% height=50%>  
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0052.PNG" width=50% height=50%>
+   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0051.PNG" width=40% height=40%>  
+   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0052.PNG" width=40% height=40%>
 </p>
 
 <p float="left">
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0053.PNG" width=25% height=25%>
+   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0053.PNG" width=40% height=40%>
    <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots/IMG_0054.PNG" width=25% height=25%>
 </p>
 

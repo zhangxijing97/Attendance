@@ -21,6 +21,10 @@ To use the Attendance app, simply launch it and select the class you want to tak
 
 Please note that all student information used for demonstration purposes in this app is randomly generated and does not represent real student data.
 
+## Future Updates
+
+We are currently working on adding new features to the Attendance app, including the ability to sync attendance data with a server. Stay tuned for updates!
+
 ## Contributing
 
 If you would like to contribute to the Attendance app, please fork the repository and submit a pull request.

@@ -38,6 +38,52 @@ Attendance was built using the following frameworks:
 - Xcode
 - SwiftUI
 
+## Data Model
+```
+class AppData
+tracks = [Track]
+students = [Student]
+attendances = [Attendance]
+
+func loadTracks()
+func loadStudents()
+func loadAttendances()
+func saveTracks()
+func saveStudents()
+func saveAttendances()
+func addAttendanceAdd(student: Student, track: Track) // Add new Attendance instance
+func removeAttendance(student: Student, track: Track) // Remove selected Attendance instance
+
+struct Track
+var id: UUID
+var name: String
+var studentIds: [UUID] // All students enroll in the Track
+var attendanceIds: [UUID]
+
+func addStudent(student: Student) // Add student.id to studentIds: [UUID]
+func removeStudent(student: Student) // Remove student.id from studentIds: [UUID]
+func getStudents(track: Track, data: AppData) -> [Student] // Return Student instance array of the Track
+func attendance(student: Student, data: AppData) -> Attendance? // Return Attendance instance of the student for the Track
+func getAttendances(data: AppData) -> [Attendance] // Return Attendance instance array of the Track
+
+struct Student
+var id = UUID()
+var name: String
+var tracks: [UUID]
+
+func addTrack(track: Track)
+func removeTrack(track: Track)
+
+struct Attendance
+var id = UUID()
+var trackId: UUID
+var studentId: UUID
+
+var sectionACourse1CheckInTime: String?
+func studentName(attendance: Attendance) -> String? // Return Student.name match studentId
+
+```
+
 ## Installation
 
 To install Mars Mission, simply clone the repository and open the project in Xcode:

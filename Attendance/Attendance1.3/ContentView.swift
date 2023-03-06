@@ -8,28 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var students = StudentData()
-    @ObservedObject var trackData = TrackData()
+    @StateObject var data = AppData()
     
     var body: some View {
         VStack {
             TabView {
-                TrackView()
+                TrackView(data: data)
                     .tabItem({
                         Label("Tracks", systemImage: "text.book.closed")
                     })
                 
-                StudentView()
+                StudentView(data: data)
                     .tabItem({
                         Label("Students", systemImage: "person.2")
                     })
             }
         }
         .onAppear {
-            self.students.loadData()
-            self.trackData.loadData()
+            self.data.loadTracks()
+            self.data.loadStudents()
+            self.data.loadTracks()
         }
-        
     }
 }
 

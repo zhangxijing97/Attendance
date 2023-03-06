@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StudentView: View {
-    @StateObject var students = StudentData()
+    @ObservedObject var data: AppData
     @State private var showingAddStudent = false
     @State private var searchText = "" // Search code part I
     
@@ -16,17 +16,16 @@ struct StudentView: View {
         NavigationView {
             List {
                 
-                ForEach(0 ..< students.students.count, id: \.self) { index in
-                    NavigationLink(destination: StudentDetailView(student: $students.students[index], students: students)) {
+                ForEach(0 ..< data.students.count, id: \.self) { index in
+                    NavigationLink(destination: StudentDetailView(student: $data.students[index], data: data)) {
                         HStack {
                             VStack(alignment: .leading) {
-                                Text(students.students[index].name)
+                                Text(data.students[index].name)
                             }
                         }
                     }
                 }
                 .onDelete(perform: removeItems)
-                
             }
 //            .searchable(text: $searchText, prompt: "Search") // Search code part II
             .navigationTitle("Students")
@@ -39,11 +38,12 @@ struct StudentView: View {
                     Button {
                         showingAddStudent.toggle()
                     } label: {
-                        Image(systemName: "plus")                    }
+                        Image(systemName: "plus")
+                    }
                 }
             }
             .sheet(isPresented: $showingAddStudent) {
-                AddStudentView(students: students)
+                AddStudentView(data: data)
             }
             
         }
@@ -58,18 +58,12 @@ struct StudentView: View {
 //    }
     
     func removeItems(at offsets: IndexSet) {
-        students.students.remove(atOffsets: offsets)
+        data.students.remove(atOffsets: offsets)
     }
-    
-//    private func initializeStudents() {
-//        let loadStudents: [Student] = Bundle.main.decode("students.json")
-//        students.students.append(contentsOf: loadStudents)
-//    }
-    
 }
 
 struct StudentView_Previews: PreviewProvider {
     static var previews: some View {
-        StudentView()
+        StudentView(data: AppData())
     }
 }

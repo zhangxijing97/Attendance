@@ -6,12 +6,14 @@
         "level": "Grades 6-9",
         "location": "ASU Mesa MIX Center",
         "date": "June 12 - 16, 9am to 4pm",
-        "days": ["Feb 20 2023", "Feb 21 2023", "Feb 22 2023", "Feb 23 2023", "Feb 24 2023"],
+        "days": ["Jun 12 2023", "Jun 13 2023", "Jun 14 2023", "Jun 15 2023", "Jun 16 2023"],
         "sections": [
             "Code for Games with Unity",
             "How Computers See"
         ],
         "students": [
+        ],
+        "studentIds": [
         ],
         "color": {"red": 0.392, "green": 0.050, "blue": 0.976},
         "SectionAIcon": "gamecontroller.fill",
@@ -35,6 +37,8 @@
         ],
         "students": [
         ],
+        "studentIds": [
+        ],
         "color": {"red": 1.0, "green": 0.290, "blue": 0.435},
         "SectionAIcon": "music.note.list",
         "SectionAColor1": {"red": 1.0, "green": 0.290, "blue": 0.435},
@@ -56,6 +60,8 @@
             "Green Screen for Special Effects"
         ],
         "students": [
+        ],
+        "studentIds": [
         ],
         "color": {"red": 0.039, "green": 0.941, "blue": 0.623},
         "SectionAIcon": "brain.head.profile",
@@ -79,6 +85,8 @@
         ],
         "students": [
         ],
+        "studentIds": [
+        ],
         "color": {"red": 0.047, "green": 0.502, "blue": 1.000},
         "SectionAIcon": "chevron.left.forwardslash.chevron.right",
         "SectionAColor1": {"red": 0.180, "green": 0.180, "blue": 0.176},
@@ -100,6 +108,8 @@
             "3D Animation in Blender"
         ],
         "students": [
+        ],
+        "studentIds": [
         ],
         "color": {"red": 0.48, "green": 0.34, "blue": 0.9},
         "SectionAIcon": "gamecontroller.fill",
@@ -123,6 +133,8 @@
         ],
         "students": [
         ],
+        "studentIds": [
+        ],
         "color": {"red": 0.039, "green": 0.941, "blue": 0.623},
         "SectionAIcon": "brain.head.profile",
         "SectionAColor1": {"red": 1.0, "green": 1.0, "blue": 1.0},
@@ -144,6 +156,8 @@
             "Musical Micros"
         ],
         "students": [
+        ],
+        "studentIds": [
         ],
         "color": {"red": 1.0, "green": 0.290, "blue": 0.435},
         "SectionAIcon": "music.note.list",
@@ -167,6 +181,8 @@
         ],
         "students": [
         ],
+        "studentIds": [
+        ],
         "color": {"red": 0.047, "green": 0.502, "blue": 1.000},
         "SectionAIcon": "chevron.left.forwardslash.chevron.right",
         "SectionAColor1": {"red": 0.180, "green": 0.180, "blue": 0.176},
@@ -189,6 +205,8 @@
         ],
         "students": [
         ],
+        "studentIds": [
+        ],
         "color": {"red": 0.957, "green": 0.384, "blue": 0.670},
         "SectionAIcon": "film",
         "SectionAColor1": {"red": 1.0, "green": 0.820, "blue": 0.0},
@@ -210,6 +228,8 @@
             "3D Animation in Blender"
         ],
         "students": [
+        ],
+        "studentIds": [
         ],
         "color": {"red": 0.48, "green": 0.34, "blue": 0.9},
         "SectionAIcon": "gamecontroller.fill",

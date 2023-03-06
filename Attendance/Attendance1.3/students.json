@@ -10,8 +10,8 @@
         "parentName": "Jane Doe",
         "parentPhoneNumber": "555-555-1213",
         "additionalContactPhoneNumber": "555-555-1214",
-        "attendance": true,
-        "tracks": [false, false, false, false, false, false, false, false, false, false]
+        "trackIds": [
+        ]
     },
     {
         "id": "2EBEA148-AE9D-4A1A-B23C-4D87B87A0D8B",
@@ -24,8 +24,8 @@
         "parentName": "John Smith",
         "parentPhoneNumber": "555-555-1216",
         "additionalContactPhoneNumber": "555-555-1217",
-        "attendance": true,
-        "tracks": [false, false, false, false, false, false, false, false, false, false]
+        "trackIds": [
+        ]
     },
     {
         "id": "7F36FD57-9ED7-44D8-B19A-B1A115866C3A",
@@ -38,8 +38,8 @@
         "parentName": "Jane Johnson",
         "parentPhoneNumber": "555-555-1219",
         "additionalContactPhoneNumber": "555-555-1220",
-        "attendance": true,
-        "tracks": [false, false, false, false, false, false, false, false, false, false]
+        "trackIds": [
+        ]
     },
     {
         "id": "3F74EEB8-E1F7-4D80-B0AF-B8C2FC82D0C6",
@@ -52,8 +52,8 @@
         "parentName": "John Brown",
         "parentPhoneNumber": "555-555-1222",
         "additionalContactPhoneNumber": "555-555-1223",
-        "attendance": true,
-        "tracks": [false, false, false, false, false, false, false, false, false, false]
+        "trackIds": [
+        ]
     },
     {
         "id": "61146B6B-8074-4796-ABF5-B94AB24C0F51",
@@ -66,8 +66,8 @@
         "parentName": "Jane Davis",
         "parentPhoneNumber": "555-555-1222",
         "additionalContactPhoneNumber": "555-555-1223",
-        "attendance": true,
-        "tracks": [false, false, false, false, false, false, false, false, false, false]
+        "trackIds": [
+        ]
     },
     {
         "id": "3a2237b0-c30b-11e9-a2a3-2a2ae2dbcce4",
@@ -80,8 +80,8 @@
         "parentName": "Jane Davis",
         "parentPhoneNumber": "555-555-1222",
         "additionalContactPhoneNumber": "555-555-1223",
-        "attendance": true,
-        "tracks": [false, false, false, false, false, false, false, false, false, false]
+        "trackIds": [
+        ]
     },
     {
         "id": "3a2237b1-c30b-11e9-a2a3-2a2ae2dbcce4",
@@ -94,8 +94,8 @@
         "parentName": "Jane Davis",
         "parentPhoneNumber": "555-555-1222",
         "additionalContactPhoneNumber": "555-555-1223",
-        "attendance": true,
-        "tracks": [false, false, false, false, false, false, false, false, false, false]
+        "trackIds": [
+        ]
     },
     {
         "id": "3a2237b2-c30b-11e9-a2a3-2a2ae2dbcce4",
@@ -108,8 +108,8 @@
         "parentName": "Jane Davis",
         "parentPhoneNumber": "555-555-1222",
         "additionalContactPhoneNumber": "555-555-1223",
-        "attendance": true,
-        "tracks": [false, false, false, false, false, false, false, false, false, false]
+        "trackIds": [
+        ]
     },
     {
         "id": "3a2237b3-c30b-11e9-a2a3-2a2ae2dbcce4",
@@ -122,8 +122,8 @@
         "parentName": "Jane Davis",
         "parentPhoneNumber": "555-555-1222",
         "additionalContactPhoneNumber": "555-555-1223",
-        "attendance": true,
-        "tracks": [false, false, false, false, false, false, false, false, false, false]
+        "trackIds": [
+        ]
     },
     {
         "id": "3a2237b4-c30b-11e9-a2a3-2a2ae2dbcce4",
@@ -136,8 +136,8 @@
         "parentName": "Jane Davis",
         "parentPhoneNumber": "555-555-1222",
         "additionalContactPhoneNumber": "555-555-1223",
-        "attendance": true,
-        "tracks": [false, false, false, false, false, false, false, false, false, false]
+        "trackIds": [
+        ]
     },
     {
         "id": "3a2237b5-c30b-11e9-a2a3-2a2ae2dbcce4",
@@ -150,8 +150,8 @@
         "parentName": "Jane Davis",
         "parentPhoneNumber": "555-555-1222",
         "additionalContactPhoneNumber": "555-555-1223",
-        "attendance": true,
-        "tracks": [false, false, false, false, false, false, false, false, false, false]
+        "trackIds": [
+        ]
     },{
         "id": "3a2237b6-c30b-11e9-a2a3-2a2ae2dbcce4",
         "name": "Lauren Anderson",
@@ -163,8 +163,8 @@
         "parentName": "Jane Davis",
         "parentPhoneNumber": "555-555-1222",
         "additionalContactPhoneNumber": "555-555-1223",
-        "attendance": true,
-        "tracks": [false, false, false, false, false, false, false, false, false, false]
+        "trackIds": [
+        ]
     }
 ]
 

@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct TrackView: View {
-    @StateObject var trackData = TrackData()
-    @State private var offset: CGFloat = 0
+    @ObservedObject var data: AppData
     
     var body: some View {
         NavigationView {
@@ -27,8 +26,8 @@ struct TrackView: View {
                                 Color(.white).opacity(0)
                                     .frame(width: 1572)
                                 HStack {
-                                    ForEach(0..<min(trackData.tracks.count, 3), id: \.self) { index in
-                                        let track = trackData.tracks[index]
+                                    ForEach(0..<min(data.tracks.count, 3), id: \.self) { index in
+                                        let track = data.tracks[index]
                                         VStack(alignment: .leading) {
                                             Color(.gray)
                                                 .frame(width: 360, height: 0.5)
@@ -37,11 +36,11 @@ struct TrackView: View {
                                             Spacer(minLength: 4)
                                             Text("Time: 9:00 AM - 4:00 PM (MST)").font(.custom("Athelas", size: 24)).bold()
                                             NavigationLink {
-                                                SectionView(track: $trackData.tracks[index], trackData: trackData)
+                                                TrackDetailView(track: $data.tracks[index], data: data)
                                             } label: {
                                                 VStack {
                                                     Text("")
-                                                        .modifier(TrackList(index: index, track: track, trackData: trackData))
+                                                        .modifier(TrackList(index: index, track: track))
                                                 }
                                             }
                                         }
@@ -65,8 +64,8 @@ struct TrackView: View {
                                 Color(.white).opacity(0)
                                     .frame(width: 1964)
                                 HStack {
-                                    ForEach(3..<min(trackData.tracks.count, 7), id: \.self) { index in
-                                        let track = trackData.tracks[index]
+                                    ForEach(3..<min(data.tracks.count, 7), id: \.self) { index in
+                                        let track = data.tracks[index]
                                         VStack(alignment: .leading) {
                                             Color(.gray)
                                                 .frame(width: 360, height: 0.5)
@@ -75,11 +74,11 @@ struct TrackView: View {
                                             Spacer(minLength: 4)
                                             Text("Time: 9:00 AM - 4:00 PM (MST)").font(.custom("Athelas", size: 24)).bold()
                                             NavigationLink {
-                                                SectionView(track: $trackData.tracks[index], trackData: trackData)
+                                                TrackDetailView(track: $data.tracks[index], data: data)
                                             } label: {
                                                 VStack {
                                                     Text("")
-                                                        .modifier(TrackList(index: index, track: track, trackData: trackData))
+                                                        .modifier(TrackList(index: index, track: track))
                                                 }
                                             }
                                         }
@@ -103,8 +102,8 @@ struct TrackView: View {
                                 Color(.white).opacity(0)
                                     .frame(width: 1572)
                                 HStack {
-                                    ForEach(7..<min(trackData.tracks.count, 10), id: \.self) { index in
-                                        let track = trackData.tracks[index]
+                                    ForEach(7..<min(data.tracks.count, 10), id: \.self) { index in
+                                        let track = data.tracks[index]
                                         VStack(alignment: .leading) {
                                             Color(.gray)
                                                 .frame(width: 360, height: 0.5)
@@ -113,11 +112,11 @@ struct TrackView: View {
                                             Spacer(minLength: 4)
                                             Text("Time: 9:00 AM - 4:00 PM (MST)").font(.custom("Athelas", size: 24)).bold()
                                             NavigationLink {
-                                                SectionView(track: $trackData.tracks[index], trackData: trackData)
+                                                TrackDetailView(track: $data.tracks[index], data: data)
                                             } label: {
                                                 VStack {
                                                     Text("")
-                                                        .modifier(TrackList(index: index, track: track, trackData: trackData))
+                                                        .modifier(TrackList(index: index, track: track))
                                                 }
                                             }
                                         }
@@ -141,6 +140,6 @@ struct TrackView: View {
 
 struct TrackView_Previews: PreviewProvider {
     static var previews: some View {
-        TrackView()
+        TrackView(data: AppData())
     }
 }

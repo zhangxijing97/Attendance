@@ -7,90 +7,9 @@
 
 import SwiftUI
 
-struct CheckInCheckOutButtonModifier: ViewModifier {
-    var index: Int
-    @Binding var track: Track
-    var checkInTime: String?
-    var propertyName: String
-    var buttonText: String
-    
-    func body(content: Content) -> some View {
-        if let sectionACourse1CheckInTime = checkInTime { // // Check In Button For Section A
-            Text(sectionACourse1CheckInTime)
-                .frame(minWidth: 95, idealWidth: 190, maxWidth: 200, alignment: .leading)
-        } else {
-            Button(action: {}) {
-                Text(buttonText)
-                    .frame(minWidth: 95, idealWidth: 190, maxWidth: 200, alignment: .leading)
-            }
-            .onTapGesture {
-                let studentIndex = self.track.students.firstIndex(where: { $0.id == self.track.students[index].id })
-                if let studentIndex = studentIndex {
-                    var updatedStudent = self.track.students[index]
-        
-                    let dateFormatter = DateFormatter() // Change the Date format
-                    dateFormatter.dateFormat = "MM/dd HH:mm"
-                    let formattedDate = dateFormatter.string(from: Date())
-
-                    switch propertyName {
-                    case "sectionACourse1CheckInTime":
-                        updatedStudent.sectionACourse1CheckInTime = formattedDate
-                    case "sectionACourse1CheckOutTime":
-                        updatedStudent.sectionACourse1CheckOutTime = formattedDate
-                    case "sectionBCourse1CheckInTime":
-                        updatedStudent.sectionBCourse1CheckInTime = formattedDate
-                    case "sectionBCourse1CheckOutTime":
-                        updatedStudent.sectionBCourse1CheckOutTime = formattedDate
-
-                    case "sectionACourse2CheckInTime":
-                        updatedStudent.sectionACourse2CheckInTime = formattedDate
-                    case "sectionACourse2CheckOutTime":
-                        updatedStudent.sectionACourse2CheckOutTime = formattedDate
-                    case "sectionBCourse2CheckInTime":
-                        updatedStudent.sectionBCourse2CheckInTime = formattedDate
-                    case "sectionBCourse2CheckOutTime":
-                        updatedStudent.sectionBCourse2CheckOutTime = formattedDate
-
-                    case "sectionACourse3CheckInTime":
-                        updatedStudent.sectionACourse3CheckInTime = formattedDate
-                    case "sectionACourse3CheckOutTime":
-                        updatedStudent.sectionACourse3CheckOutTime = formattedDate
-                    case "sectionBCourse3CheckInTime":
-                        updatedStudent.sectionBCourse3CheckInTime = formattedDate
-                    case "sectionBCourse3CheckOutTime":
-                        updatedStudent.sectionBCourse3CheckOutTime = formattedDate
-
-                    case "sectionACourse4CheckInTime":
-                        updatedStudent.sectionACourse4CheckInTime = formattedDate
-                    case "sectionACourse4CheckOutTime":
-                        updatedStudent.sectionACourse4CheckOutTime = formattedDate
-                    case "sectionBCourse4CheckInTime":
-                        updatedStudent.sectionBCourse4CheckInTime = formattedDate
-                    case "sectionBCourse4CheckOutTime":
-                        updatedStudent.sectionBCourse4CheckOutTime = formattedDate
-
-                    case "sectionACourse5CheckInTime":
-                        updatedStudent.sectionACourse5CheckInTime = formattedDate
-                    case "sectionACourse5CheckOutTime":
-                        updatedStudent.sectionACourse5CheckOutTime = formattedDate
-                    case "sectionBCourse5CheckInTime":
-                        updatedStudent.sectionBCourse5CheckInTime = formattedDate
-                    case "sectionBCourse5CheckOutTime":
-                        updatedStudent.sectionBCourse5CheckOutTime = formattedDate
-                    default:
-                        break
-                    }
-                    self.track.students[studentIndex] = updatedStudent
-                }
-            }
-        }
-    }
-}
-
 struct TrackList: ViewModifier {
     var index: Int
     var track: Track
-    var trackData: TrackData
     
     func body(content: Content) -> some View {
         HStack {

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddStudentView: View {
-    @ObservedObject var students: StudentData // Used for secondView
+    @ObservedObject var data: AppData
     @Environment(\.dismiss) var dismiss // For dismiss the AddView
     
     @State private var name = ""
@@ -20,8 +20,6 @@ struct AddStudentView: View {
     @State private var parentName = ""
     @State private var parentPhoneNumber = ""
     @State private var additionalContactPhoneNumber = ""
-    @State private var attendance = false
-    @State private var tracks = [false, false, false, false, false, false, false, false, false, false]
     let genders = ["N/A", "Female", "Male", "Intersex", "Trans", "Non-Conforming", "Personal", "Eunuch"]
     @State private var showingAlert = false // Alert
     
@@ -45,9 +43,8 @@ struct AddStudentView: View {
                 Button("Save") {
                     if  name == "" { // Make sure add something
                         showingAlert = true
-                    } else { let student = Student(name: name, emailAddress: emailAddress, referenceNumber: referenceNumber, nickName: nickName, phoneNumber: phoneNumber, gender: gender, parentName: parentName, parentPhoneNumber: parentPhoneNumber, additionalContactPhoneNumber: additionalContactPhoneNumber, attendance: attendance, tracks: tracks)
-                        
-                        students.students.append(student)
+                    } else { let student = Student(name: name, emailAddress: emailAddress, referenceNumber: referenceNumber, nickName: nickName, phoneNumber: phoneNumber, gender: gender, parentName: parentName, parentPhoneNumber: parentPhoneNumber, additionalContactPhoneNumber: additionalContactPhoneNumber, trackIds: [])
+                        data.students.append(student)
                         dismiss()
                     }
                 }
@@ -61,6 +58,7 @@ struct AddStudentView: View {
 
 struct AddStudentView_Previews: PreviewProvider {
     static var previews: some View {
-        AddStudentView(students: StudentData())
+//        AddStudentView(students: StudentData())
+        AddStudentView(data: AppData())
     }
 }

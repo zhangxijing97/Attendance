@@ -99,7 +99,7 @@ Please note that all student information used for demonstration purposes in this
 
 ## Version History
 
-### March 4, 2023
+### 1.31 March 5, 2023
 - Update and improve the rationality of the data model, optimize the data storage method
 - Fixed the bug that the page cannot be updated in time
 

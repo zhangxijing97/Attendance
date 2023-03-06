@@ -97,9 +97,11 @@ open Attendance1.3.xcodeproj
 
 Please note that all student information used for demonstration purposes in this app is randomly generated and does not represent real student data.
 
-## Future Updates
+## Version History
 
-We are currently working on adding new features to the Attendance app, including the ability to sync attendance data with a server. Stay tuned for updates!
+### March 4, 2023
+- Update and improve the rationality of the data model, optimize the data storage method
+- Fixed the bug that the page cannot be updated in time
 
 ## Contributing
 

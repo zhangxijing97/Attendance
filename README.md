@@ -71,16 +71,24 @@ var id = UUID()
 var name: String
 var tracks: [UUID]
 
-func addTrack(track: Track)
-func removeTrack(track: Track)
+func addTrack(track: Track) // Add Track.id to trackIds: [UUID]
+func removeTrack(track: Track) // Romove Track.id from trackIds: [UUID]
 
 struct Attendance
 var id = UUID()
 var trackId: UUID
-var studentId: UUID
 
-var sectionACourse1CheckInTime: String?
-func studentName(attendance: Attendance) -> String? // Return Student.name match studentId
+var day1Sessions: [Session]
+var day2Sessions: [Session]
+var day3Sessions: [Session]
+var day4Sessions: [Session]
+var day5Sessions: [Session]
+
+func studentName(attendance: Attendance) -> String? { // Return the Student.name match studentId
+
+struct Session
+var checkInTime: Date
+var checkOutTime: Date
 
 ```
 

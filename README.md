@@ -111,10 +111,6 @@ Please note that all student information used for demonstration purposes in this
 - Update and improve the rationality of the data model, optimize the data storage method
 - Fixed the bug that the page cannot be updated in time
 
-## Contributing
-
-If you would like to contribute to the Attendance app, please fork the repository and submit a pull request.
-
 ## License
 
 The Attendance app is released under the MIT License. See LICENSE for details.

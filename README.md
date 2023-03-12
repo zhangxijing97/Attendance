@@ -37,6 +37,9 @@ Attendance was built using the following frameworks:
 - Swift
 - Xcode
 - SwiftUI
+- Vapor web framework
+- PostgreSQL
+- Postman API Platform
 
 ## Data Model
 ```

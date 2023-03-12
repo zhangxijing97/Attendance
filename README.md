@@ -111,6 +111,12 @@ Please note that all student information used for demonstration purposes in this
 - Update and improve the rationality of the data model, optimize the data storage method
 - Fixed the bug that the page cannot be updated in time
 
+## Future update
+
+- Vapor
+- New UI Design
+
+
 ## License
 
 The Attendance app is released under the MIT License. See LICENSE for details.

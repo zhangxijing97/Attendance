@@ -33,15 +33,15 @@ To use the Attendance App:
 - Display all attendance data with bar charts by SwiftUI
 
 ## Screenshots
-*** DashBoardView and ClockView
+### DashBoardView and ClockView
 ![alt text](https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/01.png)
-** TrackDetailView
+### TrackDetailView
 ![alt text](https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/02.png)
-** ChartView
+### ChartView
 ![alt text](https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/03.png)
-**StudentView and StudentDetailView
+### StudentView and StudentDetailView
 ![alt text](https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/04.png)
-**AddStudentView and AddTrackView
+### AddStudentView and AddTrackView
 ![alt text](https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/05.png)
 
 ## Privacy Note

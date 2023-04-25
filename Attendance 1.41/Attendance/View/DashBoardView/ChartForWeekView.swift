@@ -8,6 +8,16 @@
 import SwiftUI
 
 struct ChartForWeekView: View {
+    @ObservedObject var data: HTTPClient
+    
+    @State private var selectedDate = Date()
+    @State private var session = "1"
+    let sessions = ["0", "1"]
+    
+    var startOfWeek = Calendar.current.date(from: DateComponents(year: 2023, month: 6, day: 12))!
+    var endOfWeek = Calendar.current.date(from: DateComponents(year: 2023, month: 6, day: 30))!
+    @State private var isDatePickerShown = false
+    
     var body: some View {
         ZStack {
             Color.white
@@ -18,16 +28,43 @@ struct ChartForWeekView: View {
             Color.white
                 .frame(minWidth: 608, idealWidth: 610)
                 .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-//            ChartForDay()
+            
+            VStack {
+//                HStack(alignment: .top, spacing: 0) {
+                HStack(spacing: 0) {
+                    Text("Attendance Statistics for Day")
+                        .font(.system(size: 16, weight: .bold, design: .rounded))
+                        .foregroundColor(Color(red: 0.0000, green: 0.1176, blue: 0.2824))
+                        .frame(width: 250, alignment: .leading)
+                    
+                    DatePicker("", selection: $data.selectedDate, displayedComponents: .date)
+                    Spacer()
+                    
+                    Picker("Session", selection: $session) {
+                        ForEach(sessions, id: \.self) { session in
+                            if session == "0" {
+                                Text("Session A")
+                            } else {
+                                Text("Session B")
+                            }
+                        }
+                    }
+                    .accentColor(Color(red: 0.0000, green: 0.1176, blue: 0.2824))
+                    .frame(width: 120,alignment: .trailing)
+                }
+                // Add your chart here
+                ChartForDay(data: data, session: session)
+            }
+            .padding(28)
         }
-        .padding(.bottom, 35)
-        .padding(.leading, 35)
-        .padding(.trailing, 20) // Add 15 leading padding for TrackView
+//        .padding(.bottom, 35)
+//        .padding(.leading, 35)
+//        .padding(.trailing, 20)
     }
 }
 
 struct ChartForWeekView_Previews: PreviewProvider {
     static var previews: some View {
-        ChartForWeekView()
+        ChartForWeekView(data: HTTPClient())
     }
 }

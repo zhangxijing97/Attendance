@@ -11,7 +11,11 @@ struct TrackDetailView: View {
     @ObservedObject var data: HTTPClient
     var track: Track
     @State private var showingAddStudentToTrackView = false
-    @State var selectedDate = Date()
+//    @State var selectedDate = Date()
+    // Get selectedDate
+    var selectedDate: Date {
+        return data.selectedDate
+    }
     
     var startOfWeek = Calendar.current.date(from: DateComponents(year: 2023, month: 2, day: 13))!
     var endOfWeek = Calendar.current.date(from: DateComponents(year: 2023, month: 6, day: 30))!
@@ -145,7 +149,7 @@ struct TrackDetailView: View {
                 HStack {
                     
                     Image(systemName: "calendar")
-                    DatePicker("Select Date", selection: $selectedDate, in: startOfWeek...endOfWeek, displayedComponents: .date)
+                    DatePicker("Select Date", selection: $data.selectedDate, in: startOfWeek...endOfWeek, displayedComponents: .date)
                 }
                 
                 Picker("Session", selection: $session) {

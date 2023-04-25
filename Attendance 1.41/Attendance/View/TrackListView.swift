@@ -88,7 +88,6 @@ struct TrackListView: View {
         }
         return attendances.isEmpty ? nil : attendances
     }
-
     
     // Get number of Attendances
     private func totalAttendances(track: Track) -> Int {
@@ -122,12 +121,14 @@ struct TrackListView: View {
                 
                 // Tracks list for the date
                 let tracks = sortedTracksForDate()
-                if tracks == nil {
-                    // When tracks.isEmpty, show something in this place
-//                    Color.white
-//                        .frame(width: 396, height: 212)
-//                        .opacity(0)
-//                        .padding([.leading, .trailing], 35)
+                let tracksNotForDate = sortedTracksNotForDate()
+                
+                if tracks == nil && tracksNotForDate == nil {
+                    Color.white
+                        .frame(width: 396, height: 212)
+                        .opacity(0)
+                        .padding([.leading, .trailing], 35)
+                } else if tracks == nil {
                 } else {
                 ForEach(tracks!, id: \.id) { track in
                     TrackView(data: data, track: track)
@@ -137,25 +138,16 @@ struct TrackListView: View {
                     .sheet(item: $selectedTrack) { selectedTrack in
                         TrackDetailView(data: data, track: selectedTrack)
                     }
-                    .frame(width: 396, height: 212)
                 }
-                .padding(.bottom, 15)
-//                .padding([.leading, .trailing], 35)
+                .padding(.bottom, 20)
                 .padding(.leading, 15)
                 .padding(.trailing, 35)
-                    
                 }
                 
                 // List for tracks not for the date
-                let tracksNotForDate = sortedTracksNotForDate()
                 if tracksNotForDate == nil {
-                    // When tracks.isEmpty, show something in this place
-                    Color.white
-                        .frame(width: 396, height: 212)
-                        .opacity(0)
-                        .padding([.leading, .trailing], 35)
                 } else {
-                    
+                // List for tracks not for the date
                 ForEach(tracksNotForDate!, id: \.id) { track in
                     TrackView(data: data, track: track)
                     .onTapGesture {
@@ -166,15 +158,14 @@ struct TrackListView: View {
                     }
                     .opacity(0.4)
                 }
-                .padding(.bottom, 15)
-//                .padding([.leading, .trailing], 35)
+                .padding(.bottom, 20)
                 .padding(.leading, 15)
                 .padding(.trailing, 35)
                 }
                 
             }
         }
-        .padding(.bottom, 20)
+        .padding(.bottom, 15)
     }
 }
 

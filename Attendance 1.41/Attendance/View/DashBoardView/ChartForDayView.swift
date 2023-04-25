@@ -11,12 +11,12 @@ struct ChartForDayView: View {
     @ObservedObject var data: HTTPClient
     
     @State private var selectedDate = Date()
-    @State private var session = "All Sessions"
-    let sessions = ["All Sessions", "Session A", "Session B"]
+    @State private var session = "0"
+    let sessions = ["0", "1"]
     
     var startOfWeek = Calendar.current.date(from: DateComponents(year: 2023, month: 6, day: 12))!
     var endOfWeek = Calendar.current.date(from: DateComponents(year: 2023, month: 6, day: 30))!
-    @State private var isDatePickerShown = false
+    @State private var isDetailViewShown = false
 
     // Sample data for sessions
     var body: some View {
@@ -43,19 +43,28 @@ struct ChartForDayView: View {
                     
                     Picker("Session", selection: $session) {
                         ForEach(sessions, id: \.self) { session in
-                            Text(session)
+                            if session == "0" {
+                                Text("Session A")
+                            } else {
+                                Text("Session B")
+                            }
                         }
                     }
                     .accentColor(Color(red: 0.0000, green: 0.1176, blue: 0.2824))
+                    .frame(width: 120,alignment: .trailing)
                 }
                 // Add your chart here
                 ChartForDay(data: data, session: session)
             }
             .padding(28)
         }
-        .padding(.bottom, 35)
-        .padding(.leading, 35)
-        .padding(.trailing, 20)
+//        .onTapGesture {
+//            isDetailViewShown = true
+//        }
+//        .fullScreenCover(isPresented: $isDetailViewShown) {
+//            ChartForDayView(data: data)
+//        }
+        
     }
 }
 

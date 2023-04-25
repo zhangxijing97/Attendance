@@ -20,7 +20,17 @@ struct DashBoardView: View {
                         .frame(height: 35)
                         .padding(.leading, 35)
                     ChartForDayView(data: data)
-                    ChartForWeekView()
+//                        .frame(height: 400)
+                        .frame(minHeight: 300, idealHeight: 326)
+                        .padding(.bottom, 28)
+                        .padding(.leading, 35)
+                        .padding(.trailing, 20)
+                    ChartForWeekView(data: data)
+//                        .frame(height: 400)
+                        .frame(minHeight: 300, idealHeight: 326)
+                        .padding(.bottom, 35)
+                        .padding(.leading, 35)
+                        .padding(.trailing, 20)
                 }
             }
             

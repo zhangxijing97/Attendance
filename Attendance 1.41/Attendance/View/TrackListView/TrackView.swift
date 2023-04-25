@@ -16,13 +16,28 @@ struct TrackView: View {
         return data.selectedDate
     }
     
-    // All function below is for attendances
+    // Function below is for students
     // Get all trackstudents for the track
     private func trackstudentsForTrack() -> [TrackStudent]? {
         let trackstudents = data.trackstudents.filter { $0.track_id == track.id }
         return trackstudents.isEmpty ? nil : trackstudents
     }
     
+    // Get all students for the track
+    private func studentsForTrack() -> [Student]? {
+        guard let trackstudents = trackstudentsForTrack() else { return [] }
+        let students = data.students.filter { student in
+            trackstudents.contains(where: { $0.student_id == student.id })
+        }
+        return students.isEmpty ? nil : students
+    }
+    
+    // Get number of Students
+    private func numberOfStudents() -> Int {
+        return studentsForTrack()?.count ?? 0
+    }
+    
+    // All function below is for attendances
     // Get all attendances match the trackstudents
     private func attendancesForTrack() -> [Attendance]? {
         guard let trackstudents = trackstudentsForTrack() else { return [] }
@@ -83,7 +98,7 @@ struct TrackView: View {
                             .foregroundColor(Color(red: 0.0000, green: 0.1176, blue: 0.2824))
                         Spacer()
                             .frame(height: 38)
-                        Text("\(totalAttendances()/2)")
+                        Text("\(numberOfStudents())")
                             .font(.system(size: 26, weight: .bold, design: .rounded))
                             .foregroundColor(Color(red: 0.0000, green: 0.1176, blue: 0.2824))
                         Spacer()

@@ -9,8 +9,8 @@ import SwiftUI
 
 struct DateView: View {
     @ObservedObject var data: HTTPClient
-    var startOfWeek = Calendar.current.date(from: DateComponents(year: 2023, month: 6, day: 12))!
-    var endOfWeek = Calendar.current.date(from: DateComponents(year: 2023, month: 6, day: 30))!
+//    var startOfWeek = Calendar.current.date(from: DateComponents(year: 2023, month: 6, day: 12))!
+//    var endOfWeek = Calendar.current.date(from: DateComponents(year: 2023, month: 6, day: 30))!
     @State var isDatePickerShown = false // Track whether the date picker should be shown or hidden
     
     var body: some View {
@@ -44,7 +44,8 @@ struct DateView: View {
             }
         }
         .formSheet(isPresented: $isDatePickerShown) {
-            DatePicker("Select Date", selection: $data.selectedDate, in: startOfWeek...endOfWeek, displayedComponents: .date)
+//            DatePicker("Select Date", selection: $data.selectedDate, in: startOfWeek...endOfWeek, displayedComponents: .date)
+            DatePicker("Select Date", selection: $data.selectedDate, displayedComponents: .date)
                 .datePickerStyle(.graphical)
         }
     }

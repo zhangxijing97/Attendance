@@ -39,10 +39,10 @@ To use the Attendance App:
    <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0111.PNG" style="max-width: 100%; height: auto;">
 </p>
 
-<p align="center">
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0110.PNG" style="max-width: 50%; height: auto;">  
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0111.PNG" style="max-width: 50%; height: auto;">
-</p>
+<div style="display: flex; justify-content: center;">
+  <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0110.PNG" style="max-width: 45%; height: auto; margin-right: 5%;">
+  <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0111.PNG" style="max-width: 45%; height: auto; margin-left: 5%;">
+</div>
 
 <p float="left">
    <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0112.PNG" width=40% height=40%>

@@ -1,5 +1,5 @@
 # Attendance
-<img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/Attendance.png" width=40% height=40%>  
+<img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/Attendance.png">
 
 Attendance is an iPadOS app designed for teaching assistants at ASU Digital Culture Summer Institute. The app allows teaching assistants to manage attendance for their classes, including taking attendance, adding and removing students, and generating reports.
 

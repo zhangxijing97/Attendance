@@ -1,7 +1,9 @@
 # Attendance
 ![alt text](https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/Attendance.png)
 
-Attendance is an iPadOS app designed for teaching assistants at ASU Digital Culture Summer Institute. The app allows teaching assistants to manage attendance for their classes, including taking attendance, adding and removing students, and generating reports.
+Attendance is a web-based iPadOS app designed for ASU Digital Culture Summer Institute. The application allows teaching assistants to manage attendance for their classes, including check-in, check-out, adding and removing students/ classes, and generating reports.
+
+You can find the Vapor server app here: [attendance-app-server](https://github.com/zhangxijing97/attendance-app-server)
 
 ## Features
 

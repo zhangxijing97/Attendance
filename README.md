@@ -33,36 +33,11 @@ To use the Attendance App:
 - Display all attendance data with bar charts by SwiftUI
 
 ## Screenshots
-
-<p align="center">
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0110.PNG" style="max-width: 100%; height: auto;">
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0111.PNG" style="max-width: 100%; height: auto;">
-</p>
-
-<div style="display: flex; justify-content: center;">
-  <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0110.PNG" style="max-width: 45%; height: auto; margin-right: 5%;">
-  <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0111.PNG" style="max-width: 45%; height: auto; margin-left: 5%;">
-</div>
-
-<p float="left">
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0112.PNG" width=40% height=40%>
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0113.PNG" width=40% height=40%>
-</p>
-
-<p float="left">
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0114.PNG" width=40% height=40%>
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0115.PNG" width=40% height=40%>
-</p>
-
-<p float="left">
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0116.PNG" width=40% height=40%>
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0117.PNG" width=40% height=40%>
-</p>
-
-<p float="left">
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0118.PNG" width=40% height=40%>
-   <img src="https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/IMG_0119.PNG" width=40% height=40%>
-</p>
+![alt text](https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/01.png)
+![alt text](https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/02.png)
+![alt text](https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/03.png)
+![alt text](https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/04.png)
+![alt text](https://github.com/zhangxijing97/Attendance/blob/main/Screenshots%20Version%201.41/05.png)
 
 ## Privacy Note
 
